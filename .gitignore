@@ -1,2 +1,6 @@
 mysql
+# Ignoring docs or outputs
 *.pdf
+*/*.pdf
+*/*.zip
+*/*.png
