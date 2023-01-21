@@ -1,5 +1,6 @@
 /* create a database for iran khodro */
-CREATE DATABASE if not exists Iran_Khodro;
+DROP DATABASE IF EXISTS Iran_Khodro;
+CREATE DATABASE IF NOT EXISTS Iran_Khodro;
 USE Iran_Khodro;
 
 /* Refreshing database just for test - comment if not needed */
@@ -115,7 +116,9 @@ CREATE TABLE IF NOT EXISTS Purchases
 (
     ID INT AUTO_INCREMENT PRIMARY KEY,
     CODE CHAR(20) NOT NULL,
+    BUYER_ID CHAR(10) NOT NULL,
     P_ID INT NOT NULL,
-    P_TYPE CHAR(1) CHECK (P_TYPE IN ('C', 'P')) NOT NULL,
-    NUM INT CHECK(NUM > 0) NOT NULL
+    P_TYPE CHAR(1) CHECK(P_TYPE IN ('C', 'P')) NOT NULL,
+    NUM INT CHECK(NUM > 0) NOT NULL,
+    FOREIGN KEY (BUYER_ID) REFERENCES Customers(NN)
 );
