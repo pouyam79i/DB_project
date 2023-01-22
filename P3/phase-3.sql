@@ -109,3 +109,299 @@ VALUES (
     "Meidan vali asr - sakhteman nejat vahed 2"
 );
 
+
+/* ADDING SUPPLIERS */
+INSERT INTO Suppliers (NAME, CEO_F_NAME, CEO_L_NAME, CBY, CBM, CBD, CEY, CEM, CED, ADDRS_PROV, ADDRS_CITY, ADDRS_DETAIL)
+VALUES (
+    "Charkh-Mobarak",
+    'Mohammad', 
+    "Zamani",
+    2012, 2, 21,
+    2018, 2, 21,
+    "Esfehan",
+    "Foladmobarake",
+    "Meydan X"    
+);
+
+INSERT INTO Suppliers (NAME, CEO_F_NAME, CEO_L_NAME, CBY, CBM, CBD, CEY, CEM, CED, ADDRS_PROV, ADDRS_CITY, ADDRS_DETAIL)
+VALUES (
+    "Nore-Yazd",
+    'Kimia', 
+    "Mortazavi",
+    2013, 2, 10,
+    2020, 4, 25,
+    "Yazd",
+    "Yazd",
+    "Meydan Y"    
+);
+
+INSERT INTO Suppliers (NAME, CEO_F_NAME, CEO_L_NAME, CBY, CBM, CBD, CEY, CEM, CED, ADDRS_PROV, ADDRS_CITY, ADDRS_DETAIL)
+VALUES (
+    "Zanjir",
+    'Leyla', 
+    "Mohammadi",
+    2010, 1, 1,
+    2020, 8, 22,
+    "Tehran",
+    "Tehran",
+    "Shahrak sanati 1"    
+);
+
+INSERT INTO Suppliers (NAME, CEO_F_NAME, CEO_L_NAME, CBY, CBM, CBD, CEY, CEM, CED, ADDRS_PROV, ADDRS_CITY, ADDRS_DETAIL)
+VALUES (
+    "Lent-khorasan",
+    'Kimia', 
+    "Mortazavi",
+    2013, 2, 21,
+    2020, 4, 21,
+    "Khorasanrazavi",
+    "Mashhad",
+    "Shahrak sanati 3"     
+);
+
+
+/* Products */
+INSERT INTO Products (S_ID, NAME, STOCK, UP)
+VALUES (
+    "1",
+    "CHAR-SMALL",
+    32,
+    20,
+);
+
+INSERT INTO Products (S_ID, NAME, STOCK, UP)
+VALUES (
+    "1",
+    "CHAR-BIG",
+    18,
+    30,
+);
+
+INSERT INTO Products (S_ID, NAME, STOCK, UP)
+VALUES (
+    "2",
+    "BRAKE-LIGHT",
+    5,
+    3,
+);
+
+INSERT INTO Products (S_ID, NAME, STOCK, UP)
+VALUES (
+    "2",
+    "FORWARD-LIGHT",
+    13,
+    5,
+);
+
+INSERT INTO Products (S_ID, NAME, STOCK, UP)
+VALUES (
+    "3",
+    "TASMETIME",
+    0,
+    10,
+);
+
+INSERT INTO Products (S_ID, NAME, STOCK, UP)
+VALUES (
+    "3",
+    "FAN-RADIATOR",
+    60,
+    8,
+);
+
+INSERT INTO Products (S_ID, NAME, STOCK, UP)
+VALUES (
+    "4",
+    "LENT-206",
+    38,
+    10,
+);
+
+INSERT INTO Products (S_ID, NAME, STOCK, UP)
+VALUES (
+    "4",
+    "LENT-SAMAND",
+    41,
+    11,
+);
+
+
+/* ADDING GEARS */
+INSERT INTO Gears (TYPE)
+VALUES (
+    "NON-AUTOMATE"
+);
+
+INSERT INTO Gears (TYPE)
+VALUES (
+    "AUTOMATE"
+);
+
+
+/* ADDING COLORS */
+INSERT INTO Colors (NAME, CODE)
+VALUES (
+    "white",
+    "FFFFFF"
+);
+
+INSERT INTO Colors (NAME, CODE)
+VALUES (
+    "black",
+    "000000"
+);
+
+
+/* ADDING BRAND */
+INSERT INTO Brands (NAME)
+VALUES (
+    "PEUGEOT-206",
+);
+
+INSERT INTO Brands (NAME)
+VALUES (
+    "SAMAND",
+);
+
+
+/* ADDING MODELS */
+INSERT INTO Models (NAME, BRAND_ID)
+VALUES (
+    "TIP-1",
+    "1"
+);
+
+INSERT INTO Models (NAME, BRAND_ID)
+VALUES (
+    "TIP-3",
+    "1"
+);
+
+INSERT INTO Models (NAME, BRAND_ID)
+VALUES (
+    "LX",
+    "2"
+);
+
+INSERT INTO Models (NAME, BRAND_ID)
+VALUES (
+    "SOREN",
+    "2"
+);
+
+
+/* ADDING CARS */
+INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
+VALUES (
+    201354,
+    "1",
+    "1",
+    "white",
+    "1"
+);
+
+INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
+VALUES (
+    301254,
+    "1",
+    "2",
+    "white",
+    "2"
+);
+
+INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
+VALUES (
+    402381,
+    "1",
+    "1",
+    "black",
+    "1"
+);
+
+INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
+VALUES (
+    121353,
+    "1",
+    "2",
+    "white",
+    "1"
+);
+
+INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
+VALUES (
+    801254,
+    "2",
+    "1",
+    "white",
+    "1"
+);
+
+INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
+VALUES (
+    401121,
+    "2",
+    "2",
+    "white",
+    "2"
+);
+
+INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
+VALUES (
+    516632,
+    "2",
+    "1",
+    "black",
+    "1"
+);
+
+INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
+VALUES (
+    131388,
+    "2",
+    "2",
+    "white",
+    "1"
+);
+
+INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
+VALUES (
+    801254,
+    "1",
+    "1",
+    "white",
+    "2"
+);
+
+INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
+VALUES (
+    701127,
+    "2",
+    "2",
+    "black",
+    "2"
+);
+
+INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
+VALUES (
+    310637,
+    "1",
+    "1",
+    "black",
+    "1"
+);
+
+INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
+VALUES (
+    931311,
+    "2",
+    "2",
+    "black",
+    "2"
+);
+
+
+/* ADDING PURCHASES */
+INSERT INTO Purchases (CODE, )
+VALUES (
+
+);
