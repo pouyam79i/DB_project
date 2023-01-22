@@ -25,7 +25,7 @@ INSERT INTO Customers (NN, PHONE, F_NAME, L_NAME, ADDRS_PROV, ADDRS_CITY, ADDRS_
 VALUES (
     "2004313534",
     "09234317388",
-    "Mohhamd",
+    "Mohhamad",
     "Haghjo",
     "Khorasan Razavi",
     "Neishabor",
@@ -163,66 +163,66 @@ VALUES (
 /* Products */
 INSERT INTO Products (S_ID, NAME, STOCK, UP)
 VALUES (
-    "1",
+    1,
     "CHAR-SMALL",
     32,
-    20,
+    20
 );
 
 INSERT INTO Products (S_ID, NAME, STOCK, UP)
 VALUES (
-    "1",
+    1,
     "CHAR-BIG",
     18,
-    30,
+    30
 );
 
 INSERT INTO Products (S_ID, NAME, STOCK, UP)
 VALUES (
-    "2",
+    2,
     "BRAKE-LIGHT",
     5,
-    3,
+    3
 );
 
 INSERT INTO Products (S_ID, NAME, STOCK, UP)
 VALUES (
-    "2",
+    2,
     "FORWARD-LIGHT",
     13,
-    5,
+    5
 );
 
 INSERT INTO Products (S_ID, NAME, STOCK, UP)
 VALUES (
-    "3",
+    3,
     "TASMETIME",
     0,
-    10,
+    10
 );
 
 INSERT INTO Products (S_ID, NAME, STOCK, UP)
 VALUES (
-    "3",
+    3,
     "FAN-RADIATOR",
     60,
-    8,
+    8
 );
 
 INSERT INTO Products (S_ID, NAME, STOCK, UP)
 VALUES (
-    "4",
+    4,
     "LENT-206",
     38,
-    10,
+    10
 );
 
 INSERT INTO Products (S_ID, NAME, STOCK, UP)
 VALUES (
-    "4",
+    4,
     "LENT-SAMAND",
     41,
-    11,
+    11
 );
 
 
@@ -255,12 +255,12 @@ VALUES (
 /* ADDING BRAND */
 INSERT INTO Brands (NAME)
 VALUES (
-    "PEUGEOT-206",
+    "PEUGEOT-206"
 );
 
 INSERT INTO Brands (NAME)
 VALUES (
-    "SAMAND",
+    "SAMAND"
 );
 
 
@@ -294,114 +294,168 @@ VALUES (
 INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
 VALUES (
     201354,
-    "1",
-    "1",
+    1,
+    1,
     "white",
-    "1"
+    1
 );
 
 INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
 VALUES (
     301254,
-    "1",
-    "2",
+    1,
+    2,
     "white",
-    "2"
+    2
 );
 
 INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
 VALUES (
     402381,
-    "1",
-    "1",
+    1,
+    1,
     "black",
-    "1"
+    1
 );
 
 INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
 VALUES (
     121353,
-    "1",
-    "2",
+    1,
+    2,
     "white",
-    "1"
+    1
 );
 
 INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
 VALUES (
     801254,
-    "2",
-    "1",
+    2,
+    1,
     "white",
-    "1"
+    1
 );
 
 INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
 VALUES (
     401121,
-    "2",
-    "2",
+    2,
+    2,
     "white",
-    "2"
+    2
 );
 
 INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
 VALUES (
     516632,
-    "2",
-    "1",
+    2,
+    1,
     "black",
-    "1"
+    1
 );
 
 INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
 VALUES (
     131388,
-    "2",
-    "2",
+    2,
+    2,
     "white",
-    "1"
+    1
 );
 
 INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
 VALUES (
-    801254,
-    "1",
-    "1",
+    891354,
+    1,
+    1,
     "white",
-    "2"
+    2
 );
 
 INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
 VALUES (
     701127,
-    "2",
-    "2",
+    2,
+    2,
     "black",
-    "2"
+    2
 );
 
 INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
 VALUES (
     310637,
-    "1",
-    "1",
+    1,
+    1,
     "black",
-    "1"
+    1
 );
 
 INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
 VALUES (
     931311,
-    "2",
-    "2",
+    2,
+    2,
     "black",
-    "2"
+    2
 );
 
 
 /* ADDING PURCHASES */
-INSERT INTO Purchases (CODE, )
+INSERT INTO Purchases (CODE, P_ID, P_TYPE, NUM)
 VALUES (
+    132,
+    1,
+    "P",
+    3
+);
 
+INSERT INTO Purchases (CODE, P_ID, P_TYPE, NUM)
+VALUES (
+    132,
+    2,
+    "P",
+    1
+);
+
+INSERT INTO Purchases (CODE, P_ID, P_TYPE, NUM)
+VALUES (
+    132,
+    3,
+    "P",
+    5
+);
+
+INSERT INTO Purchases (CODE, P_ID, P_TYPE, NUM)
+VALUES (
+    247,
+    131388,
+    "C",
+    1
+);
+
+INSERT INTO Purchases (CODE, P_ID, P_TYPE, NUM)
+VALUES (
+    351,
+    931311,
+    "C",
+    1
+);
+
+/* ADDING CODE_BUYER */
+INSERT INTO Code_Buyer (CODE, BUYER_ID)
+VALUES (
+    351,
+    "1004003434"
+);
+
+INSERT INTO Code_Buyer (CODE, BUYER_ID)
+VALUES (
+    247,
+    "2004313534"
+);
+
+INSERT INTO Code_Buyer (CODE, BUYER_ID)
+VALUES (
+    132,
+    "5493452439"
 );
