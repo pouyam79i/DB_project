@@ -331,7 +331,7 @@ INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
 VALUES (
     801254,
     2,
-    1,
+    3,
     "white",
     1
 );
@@ -340,7 +340,7 @@ INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
 VALUES (
     401121,
     2,
-    2,
+    3,
     "white",
     2
 );
@@ -349,7 +349,7 @@ INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
 VALUES (
     516632,
     2,
-    1,
+    4,
     "black",
     1
 );
@@ -358,7 +358,7 @@ INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
 VALUES (
     131388,
     2,
-    2,
+    3,
     "white",
     1
 );
@@ -367,7 +367,7 @@ INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
 VALUES (
     891354,
     1,
-    1,
+    4,
     "white",
     2
 );
@@ -376,7 +376,7 @@ INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
 VALUES (
     701127,
     2,
-    2,
+    3,
     "black",
     2
 );
@@ -394,7 +394,7 @@ INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
 VALUES (
     931311,
     2,
-    2,
+    3,
     "black",
     2
 );
