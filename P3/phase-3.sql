@@ -367,7 +367,7 @@ INSERT INTO Cars (VIN, BRAND_ID, MODEL_ID, COLOR_NAME, GEAR_ID)
 VALUES (
     891354,
     1,
-    4,
+    2,
     "white",
     2
 );
