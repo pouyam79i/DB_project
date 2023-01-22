@@ -1,0 +1,5 @@
+/* INDEXING */
+CREATE INDEX idx_CEY ON Suppliers (CEY);
+CREATE INDEX idx_STOCK ON Products (STOCK);
+CREATE INDEX idx_PHONE ON Customers (PHONE);
+CREATE INDEX idx_B_NAME ON Brands (NAME);
