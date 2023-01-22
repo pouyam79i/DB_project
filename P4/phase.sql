@@ -1,0 +1,40 @@
+/* Adding a customer */
+INSERT INTO Customers (NN, PHONE, F_NAME, L_NAME, ADDRS_PROV, ADDRS_CITY, ADDRS_DETAIL)
+VALUES (
+    "1234567810",
+    "44796268462",
+    "Sherlock",
+    "Holmes",
+    "London",
+    "London",
+    "212 Baker Street"
+);
+
+/* Adding a purchase */
+INSERT INTO Purchases (CODE, P_ID, P_TYPE, NUM)
+VALUES (
+    209,
+    401121,
+    "C",
+    1
+);
+INSERT INTO Code_Buyer (CODE, BUYER_ID)
+VALUES (
+    209,
+    "1234567810"
+);
+
+/* UPDATING MR. HOLMES */
+UPDATE Customers SET PHONE='44734278008' WHERE NN='1234567810';
+
+/* SHOW CUSTOMERS BEFORE DELETATION */
+SELECT * FROM Customers;
+
+/* DELETING USERS WITH NO PURCHASES */
+SET SQL_SAFE_UPDATES = 0;
+DELETE FROM Customers AS C WHERE NOT EXISTS (
+    SELECT * FROM CODE_BUYER AS CB WHERE C.NN = CB.BUYER_ID
+);
+SET SQL_SAFE_UPDATES = 1;
+
+SELECT * FROM Customers;
